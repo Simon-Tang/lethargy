@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>New Tab</title>
+        <meta name="description" content="Disrupts the culture of the new tab page with an innovative and responsive goose.">
+        <meta name="author" content="Disruptive Innovation">
+
+        <!-- JQuery 3.1.1 -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+
+        <!-- Lodash 4.17.2 -->
+        <script src="js/lodash.js"></script>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+        <!-- Vex -->
+        <script src="js/vex.combined.min.js"></script>
+        <link rel="stylesheet" href="css/vex.css" />
+        <link rel="stylesheet" href="css/vex-theme-uw.css" />
+
+        <!-- Custom -->
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/newtab-scripts.js"></script>
+
+
+        <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div id="center" class="white">
+            <div id="goosejumpgame">
+                <!-- TODO: Implement Goose Jump game somewhere and add trigger -->
+            </div>
+            <div id="clock"></div>
+            <div id="greeting"></div>
+        </div>
+
+        <div id="bottom-right" class="white">
+            <div id="optionsPane">
+                <input id="show420Time" type="checkbox" />
+                <label for="show420Time">Use 420 time</label>
+            </div>
+
+            <a id="aboutButton" href="#">About</a>
+            <a id="optionsButton" href="#"><i class="fa fa-fw fa-gear"></i></a>
+        </div>
+    </body>
+</html>
