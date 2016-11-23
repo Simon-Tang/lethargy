@@ -1,8 +1,15 @@
 {
-    "name": "Lethargy",
-    "description": "Disrupts the culture of the new tab page with an innovative and responsive goose.",
-    "version": "0.420",
     "manifest_version": 2,
+
+    "name": "Lethargy",
+    "version": "0.420.4",
+    "author": "Disruptive Innovation",
+    "version_name": "0.420.4 alpha",
+
+    "description": "Disrupts the culture of the new tab page with an innovative and responsive goose.",
+    "icons": {
+        "128": "icon128.png"
+    },
 
     "permissions": [
         "storage"

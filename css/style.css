@@ -1,0 +1,80 @@
+html {
+    background-image: url("../img/angry_goose_0.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-position: center;*/
+    background-position: 50% 20%;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    padding: 10px;
+}
+
+.white {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: white;
+    text-shadow: 4px 4px 20px black;
+    font-size: 1.5em;
+}
+
+img {
+    box-shadow: 4px 4px 20px black;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+a:link, a:visited {
+    opacity: 0.5;
+    transition: .1s;
+}
+
+a:hover, a:active {
+    opacity: 1;
+    transition: .2s;
+}
+
+a.strong {
+    opacity: 1 !important;
+    text-decoration: underline;
+}
+
+#center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#bottom-right {
+    position: fixed;
+    text-align: right;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+}
+
+#goosejumpgame {
+    display: none;
+    text-shadow: none;
+    /* Fix the "jquery slidedown snap back issue" */
+    overflow: hidden;
+}
+
+#clock {
+    font-size: 8em;
+}
+
+#greeting {
+    font-size: 2em;
+}
+
+#optionsPane {
+    display: none;
+}
