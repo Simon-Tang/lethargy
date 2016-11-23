@@ -28,12 +28,12 @@ a {
     color: inherit;
 }
 
-a:link, a:visited {
+a:link, a:visited, .white label:not(:hover) {
     opacity: 0.5;
     transition: .1s;
 }
 
-a:hover, a:active {
+a:hover, a:active, .white label:hover {
     opacity: 1;
     transition: .2s;
 }

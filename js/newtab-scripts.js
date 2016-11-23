@@ -24,6 +24,17 @@ vex.defaultOptions.className = 'vex-theme-uw';
         $('#greeting').text(getGreeting());
     });
 
+    chrome.storage.onChanged.addListener(function (changes, stringAreaName) {
+        _.forOwn(changes, function (value, key) {
+            switch (key) {
+                case 'show420Time':
+                    show420Time = value.newValue;
+                    $('#clock').text(getTime());
+                    break;
+            }
+        });
+    });
+
     $(document).ready(function () {
         setIntervalAndExecute(function() {
             $('#clock').text(getTime());
@@ -41,25 +52,12 @@ vex.defaultOptions.className = 'vex-theme-uw';
         var optButton = $('#optionsButton');
         optButton.click(function () {
             var optPane = $('#optionsPane');
-            optPane.fadeToggle({
-                "progress": function () {
-                    if (!optButton.is(':hover')) {
-                        optButton.css('opacity', 0.5 + optPane.css('opacity') / 2);
-                    }
-                },
-                "complete": function () {
-                    if (optPane.is(':visible'))
-                        optButton.css('opacity', '1');
-                    else
-                        optButton.css('opacity', '');
-                }
-            });
+            optPane.fadeToggle();
         });
 
         $('#show420Time').change(function () {
             chrome.storage.sync.set({'show420Time': this.checked});
             show420Time = this.checked;
-            $('#clock').text(getTime());
         });
     });
 
